@@ -1,3 +1,7 @@
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/bb116cbe-d0fe-40b6-9244-54d045d0070e" alt="Efficiency Now no bg" width="300"/>
+</div>
+
 # Efficiency Now - Frontend
 
 Este é o frontend da aplicação **Efficiency Now**, desenvolvida com **React**, **Next.js**, **TypeScript** e **Tailwind CSS**. A aplicação tem como objetivo ajudar os usuários a economizar energia e reduzir emissões de carbono, promovendo um futuro mais sustentável.

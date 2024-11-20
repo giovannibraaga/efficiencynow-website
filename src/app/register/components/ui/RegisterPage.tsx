@@ -2,6 +2,10 @@
 
 import { useState, useCallback } from "react";
 import axios from "axios";
+import dotenv from "dotenv";
+import Link from "next/link";
+
+dotenv.config();
 
 type FormData = {
   name: string;
@@ -30,15 +34,11 @@ const RegisterPage = () => {
       setMessage("");
 
       try {
-        const response = await axios.post(
-          "https://smartsoftwaresolutions.online/users/register",
-          formData,
-          {
-            headers: {
-              "Content-Type": "application/json",
-            },
-          }
-        );
+        const response = await axios.post("/api/users/register", formData, {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        });
         if (response.status === 201) {
           setMessage("Usuário cadastrado com sucesso!");
         }
@@ -120,6 +120,13 @@ const RegisterPage = () => {
               placeholder="Digite sua senha"
               required
             />
+          </div>
+          <div className="mb-4">
+            <p>
+              <Link className="text-black hover:text-green-700" href="/login">
+                Já possui uma conta? Faça login.
+              </Link>
+            </p>
           </div>
           <button
             type="submit"

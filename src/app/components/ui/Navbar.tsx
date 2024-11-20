@@ -42,7 +42,7 @@ const Navbar = () => {
           </li>
           <li>
             <button className="px-4 py-2 text-white bg-green-700 rounded hover:bg-green-800">
-              Login
+              <Link href={"/login"}>Área do Usuário</Link>
             </button>
           </li>
         </ul>

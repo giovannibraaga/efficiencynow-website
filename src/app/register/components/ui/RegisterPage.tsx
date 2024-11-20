@@ -36,8 +36,6 @@ const RegisterPage = () => {
           {
             headers: {
               "Content-Type": "application/json",
-              "Transfer-Encoding": "chunked",
-              Connection: "keep-alive",
             },
           }
         );
